@@ -14,9 +14,72 @@
         <!-- Your header content here -->
     </header>
 
-    <main> 
-        <!-- Your main content here -->
-    </main>
+    <!-- <section id="playlist-section">
+        <h2>Playlist</h2>
+        <div id="playlist-list">
+        </div>
+    </section> -->
+
+
+    
+
+    <div id = "like-container" class = "container">
+        
+    </div>
+    
+    <div id = "playlist-container" class = "container">
+
+        <div id = "cloning">
+        <template id="blob">
+            <div class = "blob-cont">
+            <img class = "albumcover">
+            <p class = "title">Blonde</p>
+            <p class = "credit">Created By:</p>
+            <span class = "name" >Frank Ocean</span>
+            <span id = "heart">
+            <span>&hearts;</span>
+            <span class="like-btn"> 0 </span>
+        </span>
+
+
+            </div>
+        </template>
+        </div>
+
+
+
+    </div>
+
+    <div id = "title-container" class = "container">
+  
+        <h1>Playlist Library</h1>
+        <input type="text" id="search-bar" placeholder="Search..">
+
+    </div>
+
+    <div id="playlistModal" class="modal container">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <button id = "shuffle-btn">Shuffle</button>
+           <div id = "scloning">
+            <template id="sblob">
+                <div class = "sblob-cont">
+                <img class = "songcover">
+                <div class = "song-text">
+                <p class = "title">Blonde</p>
+                <p class = "album">Blonde</p>
+                <p class = "name" >Frank Ocean</p>
+                </div>
+                <p class = "duration" >2:22</p>
+            
+                </div>
+            </template>
+            </div>
+        </div>
+     </div>
+
+    
+
 
     <footer>
         <!-- Your footer content here -->

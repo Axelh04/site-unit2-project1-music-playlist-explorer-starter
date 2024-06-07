@@ -1,6 +1,232 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #e0e0e0;
+    height:100vh;
+    overflow: hidden;
+
 }
+
+.container {
+
+    display: inline-block;
+    
+}
+
+#playlist-container {
+    position:absolute;
+    height: 100%;
+    width: 50%;
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+}
+
+#playlist-container::-webkit-scrollbar {
+    display: none;
+  }
+
+#like-container {
+    position:absolute;
+    height: 100%;
+    width:15%;
+
+}
+
+h1 {
+    font-size:250%;
+    margin-bottom: 5%;
+
+}
+
+h1, input {
+    margin-left: 10%;
+}
+
+input {
+    border: none;
+    padding: 2% 5% 2% 5%;
+    border-radius: 1rem;
+    background: #f8f8f8;
+    box-shadow: -20px -20px 20px #bebebe,
+    20px 20px 20px #ffffff;
+   }
+
+input:hover {
+    border: none;
+    padding: 2% 5% 2% 5%;
+    border-radius: 1rem;
+    background: #e7e7e7;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    transition: 2s;
+}
+
+
+#title-container {
+    height: 50%;
+    margin-top: 15%;
+    width: 50%;
+    left: 43%;
+    position:absolute;
+
+}
+
+.blob-cont {
+    width:30%;
+    margin-left: 30%;
+    margin-top: 10%;
+    min-height: fit-content;
+    padding:5%;
+    
+    scroll-snap-align:center;
+    /* box-shadow: inset 0 0 10px #afafaf;
+    border-radius: 25px; */
+
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.blob-cont:hover{
+
+    width:30%;
+    margin-left: 30%;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    min-height: fit-content;
+    padding:5%;
+
+    size: 100%;
+    
+    scroll-snap-align:center;
+    /* box-shadow: inset 0 0 10px #afafaf;
+    border-radius: 25px; */
+
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: -20px -20px 15px #bebebe,
+             20px 20px 15px #ffffff;
+    transition: 1s;
+
+}
+.sblob-cont {
+    border-style: solid;
+    width: 60%;
+    margin:auto;
+    height:min-content;
+    border-radius: 15px;
+    scroll-snap-align:center;}
+
+p, span {
+    margin: 0%;
+
+}
+
+.credit, span {
+    color:dimgray
+}
+
+.title {
+    font-size: xx-small;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.name {
+    font-size:xx-small;
+}
+
+.credit{
+    font-size: xx-small;
+    font-weight: bold;
+
+}
+span {
+    font-size: xx-small;
+    font-weight:normal;
+}
+
+button {
+    font-size: xx-small;
+    width: min-content;
+    text-align: center;
+    margin: 0%;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+#heart:hover{
+
+    background: #bfbfbf;
+    padding: 1px;
+    border-radius: 4px;
+    
+
+}
+.albumcover {
+    width: 100%;
+    border-radius: 3px;
+    display: inline-block;
+    box-shadow: -3px 3px px rgb(0, 0, 0);
+}
+
+.songcover {
+    width: 25%;
+    border-radius: 10px;
+    border-style: dashed;
+    display: inline-block;
+
+}
+
+.song-text{
+    display:inline-block;
+    width: 50%;
+    border-style: solid;
+    font-size:small;
+    line-height: 100%;
+    top:0px;
+}
+
+.duration {
+    width: 5%;
+    font-size: medium;
+    display: inline-block;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ .modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    height: 100%;
+    width: 50%;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+    margin-left: 45%;
+    
+ }
+ .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ .close:hover,
+ .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+
