@@ -12,22 +12,22 @@ Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
 
 #### CORE FEATURES
 
-- [ -] **Home Page**
-  - [ ] A heading that captures the essence of the destination.
-  - [ ] An introductory paragraph that welcomes visitors and sets the context for the site.
-  - [ ] An evocative image that represents the location.
-  - [ ] Content organized using Flexbox for a fluid layout.
+- [- ] **Home Page**
+  - [- ] A heading that captures the essence of the destination.
+  - [ -] An introductory paragraph that welcomes visitors and sets the context for the site.
+  - [ -] An evocative image that represents the location.
+  - [ -] Content organized using Flexbox for a fluid layout.
 
-- [ -] **Top Attractions Page**
+- [- ] **Top Attractions Page**
   - [ ] A minimum of three attractions, each with a name, a photo, and a brief description.
   - [ ] Content arranged with Flexbox for consistency and responsiveness.
 
-- [ ] **Guide Section (Choose One)**
+- [ -] **Guide Section (Choose One)**
   - [ ] Either a Food Guide, Accommodations Guide, or Upcoming Local Events guide.
   - [ ] At least three entries that provide a name, address, and a description catered to a specific type of traveler (families, backpackers, etc.).
   - [ ] Links to more information for each entry, laid out using Flexbox.
 
-- [- ] **Photo Gallery**
+- [ -] **Photo Gallery**
   - [ ] At least five images with captions that convey the local atmosphere or highlights.
   - [ ] A gallery presented in a responsive design.
 
@@ -35,18 +35,18 @@ Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
   - [ ] Links to each main page of the site (Home, Top Attractions, Photo Gallery, and the chosen Guide section).
   - [ ] A navigation bar styled with Flexbox that adapts to different screen sizes.  
 
-- [ ] **Smartphone Friendly**
+- [ -] **Smartphone Friendly**
   - [ ] A design that is fully functional and aesthetically pleasing on smartphones, achieved with media queries.
 
 #### STRETCH FEATURES
 
-- [ ] **Additional Media**
+- [ -] **Additional Media**
   - Embed a map or a video that relates to the travel content.
 
 - [- ] **Enhanced Layouts**
   - Utilize CSS Grid on one or more pages for a unique layout.
 
-- [ ] **Interactive Features**
+- [- ] **Interactive Features**
   - Implement a dropdown menu in the navigation bar for additional categories or sub-pages.
 
 - [ ] **Deployment**: Deploy your website so it's accessible to the public outside of your local machine. 
@@ -54,7 +54,7 @@ Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
 - [ -] **Interactive Navigation**: Enhance the usability of your navigation bar.
   - Implement a dropdown menu in the navigation bar to organize additional categories or sub-pages.
 
-- [ ] **User Engagement**: Encourage interaction and engagement from your site visitors.
+- [- ] **User Engagement**: Encourage interaction and engagement from your site visitors.
   - Create a form to allow users to sign up for a travel newsletter, enhancing user engagement.
 
 - [- ] **Custom Styling**: Add a personal touch to your site's design.
