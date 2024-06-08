@@ -43,29 +43,63 @@ h1, input {
     margin-left: 10%;
 }
 
-input {
+input:hover, #dropdownButton:hover, li:hover {
     border: none;
-    padding: 2% 5% 2% 5%;
+    padding: 2% 20% 2% 5%;
     border-radius: 1rem;
     background: #f8f8f8;
     box-shadow: -20px -20px 20px #bebebe,
     20px 20px 20px #ffffff;
    }
 
-input:hover {
+
+input,#dropdownButton, li{
+    border: none;
+    padding: 2% 20% 2% 5%;
+    border-radius: 1rem;
+    background: #e7e7e7;
+    box-shadow:  20px 20px 15px #bebebe,
+             -20px -20px 15px #ffffff;
+    transition: 2s;
+}
+
+#dropdownButton, #dropdownButton:hover{
+    font-size:medium;
+    padding: 1% 4% 2% 4%;
+}
+
+li,li:hover {
+   padding: 2px 5px 2px 5px;
+   margin-bottom: 2%;
+   font-size: small;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 65%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+#shuffle-btn {
     border: none;
     padding: 2% 5% 2% 5%;
     border-radius: 1rem;
     background: #e7e7e7;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    box-shadow:  20px 20px 15px #bebebe,
+             -20px -20px 15px #ffffff;
     transition: 2s;
 }
 
 
+#shuffle-btn {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 42%;
+}
+
 #title-container {
     height: 50%;
-    margin-top: 15%;
+    margin-top: 17%;
     width: 50%;
     left: 43%;
     position:absolute;
@@ -87,6 +121,7 @@ input:hover {
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
+             transition: 1s;
 }
 
 .blob-cont:hover{
@@ -108,16 +143,21 @@ input:hover {
     background: #e0e0e0;
     box-shadow: -20px -20px 15px #bebebe,
              20px 20px 15px #ffffff;
-    transition: 1s;
 
 }
 .sblob-cont {
-    border-style: solid;
-    width: 60%;
     margin:auto;
-    height:min-content;
     border-radius: 15px;
-    scroll-snap-align:center;}
+    scroll-snap-align:center;
+    margin-bottom: 2%;
+    width: 75%;
+    overflow:hidden;
+    padding: 0px 25px 0px 0px ;
+    background: #ffffff;
+    box-shadow: -20px -0px 30px #adadad,
+             20px 20px 30px #ffffff;
+
+}
 
 p, span {
     margin: 0%;
@@ -128,10 +168,33 @@ p, span {
     color:dimgray
 }
 
+.stitle {
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 10%;
+}
+
+.sname {
+    font-size:xx-small;
+    font-weight: bold;
+}
+
+.salbum{
+    font-size: xx-small;
+    font-weight:normal;
+}
+span {
+    font-size: xx-small;
+    font-weight:normal;
+}
+
 .title {
     font-size: xx-small;
     font-weight: normal;
     margin-top: 5%;
+
 }
 
 .name {
@@ -142,10 +205,6 @@ p, span {
     font-size: xx-small;
     font-weight: bold;
 
-}
-span {
-    font-size: xx-small;
-    font-weight:normal;
 }
 
 button {
@@ -173,26 +232,29 @@ button {
 }
 
 .songcover {
-    width: 25%;
-    border-radius: 10px;
-    border-style: dashed;
-    display: inline-block;
+    position: relative;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -2%;
 
 }
 
 .song-text{
-    display:inline-block;
-    width: 50%;
-    border-style: solid;
+    position: relative;
+    width: 70%;
     font-size:small;
-    line-height: 100%;
-    top:0px;
+    line-height: 80%;  
+    padding: 0;
+    float: right;
 }
 
 .duration {
     width: 5%;
-    font-size: medium;
-    display: inline-block;
+    font-size: small;
+    float: right;
+    margin-top: 7%;
+    font-weight: bolder;
 }
 
 .modal {
@@ -205,26 +267,37 @@ button {
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(2px);
  }
+
+
  .modal-content {
-    background-color: #fefefe;
-    border: 1px solid #888;
+    background-color: #e0e0e0;
     height: 100%;
     width: 50%;
     overflow-y:scroll;
     scroll-snap-type: y mandatory;
     margin-left: 45%;
+    box-shadow: -20px -20px 60px #d5d5d5,
+             20px 20px 60px #ffffff;
+    transition: 1s;
+    border-radius: 20px;
     
  }
+ .model::-webkit-scrollbar {
+    display: none;
+  }
+
  .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right: 4%;
  }
  .close:hover,
  .close:focus {
-    color: black;
+    color: #7f7f7f;
     text-decoration: none;
     cursor: pointer;
  }

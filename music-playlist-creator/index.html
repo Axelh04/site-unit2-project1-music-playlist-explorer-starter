@@ -53,24 +53,35 @@
     <div id = "title-container" class = "container">
   
         <h1>Playlist Library</h1>
-        <input type="text" id="search-bar" placeholder="Search..">
+        <input type="text" id="search-bar" placeholder="Search playlists.. or artist..">
+        <span id="dropdownButton">⑆</span>
+
+        <div id="dropdownContent" style="display: none;">
+            <ul>
+              <li id="sorterA">Default</li>
+              <li id="sorterB">Likes</li>
+              <li id="sorterC">A-Z</li>
+
+            </ul>
+        </div>
+
 
     </div>
 
     <div id="playlistModal" class="modal container">
-        <span class="close">&times;</span>
         <div class="modal-content">
             <button id = "shuffle-btn">Shuffle</button>
+            <span class="close">&times;</span>
            <div id = "scloning">
             <template id="sblob">
                 <div class = "sblob-cont">
-                <img class = "songcover">
-                <div class = "song-text">
-                <p class = "title">Blonde</p>
-                <p class = "album">Blonde</p>
-                <p class = "name" >Frank Ocean</p>
-                </div>
                 <p class = "duration" >2:22</p>
+                <div class = "song-text">
+                <p class = "stitle">Blonde</p>
+                <p class = "salbum">Blonde</p>
+                <p class = "sname" >Frank Ocean</p>
+                </div>
+                <img class = "songcover">
             
                 </div>
             </template>
@@ -81,9 +92,6 @@
     
 
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
