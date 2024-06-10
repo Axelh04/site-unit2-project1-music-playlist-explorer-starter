@@ -1,85 +1,72 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
 
-## Unit 1 Assignment: Globetrotter
+## Unit 2 Assignment: Music Playlist Explorer
 
-Submitted by: **NAME**
+Submitted by: Axel Hernandez
 
-Estimated time spent: **#** hours spent in total
-
-Deployed Application (optional): [Globetrotter Deployed Site](ADD_LINK_HERE)
+Estimated time spent:  50 hours spent in total
 
 ### Application Features
 
 #### CORE FEATURES
 
-- [- ] **Home Page**
-  - [- ] A heading that captures the essence of the destination.
-  - [ -] An introductory paragraph that welcomes visitors and sets the context for the site.
-  - [ -] An evocative image that represents the location.
-  - [ -] Content organized using Flexbox for a fluid layout.
+- [X] **Display Playlists**
+  - [ ] Dynamically render playlists on the homepage using JavaScript.
+  - [ ] Fetch data from a provided JSON file and use it to create interactive playlist tiles.
+  - [ ] Each title should display the playlist's cover image, name, creator, and like count.
 
-- [- ] **Top Attractions Page**
-  - [ ] A minimum of three attractions, each with a name, a photo, and a brief description.
-  - [ ] Content arranged with Flexbox for consistency and responsiveness.
+- [X] **Playlist Details**
+  - [ ] Create a modal view that displays detailed information about a playlist when a user clicks on a playlist tile.
+  - [ ] The modal should show the playlist's cover image, name, creator, and a list of songs, including their titles, artists, and durations.
 
-- [ -] **Guide Section (Choose One)**
-  - [ ] Either a Food Guide, Accommodations Guide, or Upcoming Local Events guide.
-  - [ ] At least three entries that provide a name, address, and a description catered to a specific type of traveler (families, backpackers, etc.).
-  - [ ] Links to more information for each entry, laid out using Flexbox.
+- [X] **Like Playlists**
+  - [ ] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
+  - [ ] Update the like count on the playlist tile when a playlist is liked or unliked.
 
-- [ -] **Photo Gallery**
-  - [ ] At least five images with captions that convey the local atmosphere or highlights.
-  - [ ] A gallery presented in a responsive design.
-
-- [ -] **Navigation Bar**
-  - [ ] Links to each main page of the site (Home, Top Attractions, Photo Gallery, and the chosen Guide section).
-  - [ ] A navigation bar styled with Flexbox that adapts to different screen sizes.  
-
-- [ -] **Smartphone Friendly**
-  - [ ] A design that is fully functional and aesthetically pleasing on smartphones, achieved with media queries.
+- [X] **Shuffle Songs**
+  - [ ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist detail modal.
+  - [ ] Rearrange the songs in the modal view when the shuffle button is clicked.
 
 #### STRETCH FEATURES
 
-- [ -] **Additional Media**
-  - Embed a map or a video that relates to the travel content.
+- [ ] **Add New Playlists**
+  - [ ] Allow users to create new playlists.
+  - [ ] Users can input playlist name, creator, and add multiple songs with details like title, artist, and duration.
 
-- [- ] **Enhanced Layouts**
-  - Utilize CSS Grid on one or more pages for a unique layout.
+- [ ] **Edit Existing Playlists**
+  - [ ] Enable users to modify the details of existing playlists.
+  - [ ] Add an edit button to each playlist tile.
+  - [ ] Users can update the name, creator, and songs of the playlist.
 
-- [- ] **Interactive Features**
-  - Implement a dropdown menu in the navigation bar for additional categories or sub-pages.
+- [ ] **Delete Playlists**
+  - [ ] Add a delete button to each playlist tile.
+  - [ ] When clicked, the playlist is removed from the display and data model.
 
-- [ ] **Deployment**: Deploy your website so it's accessible to the public outside of your local machine. 
+- [X] **Search Functionality**
+  - [ ] Implement a search bar that allows users to filter playlists by name or creator.
 
-- [ -] **Interactive Navigation**: Enhance the usability of your navigation bar.
-  - Implement a dropdown menu in the navigation bar to organize additional categories or sub-pages.
-
-- [- ] **User Engagement**: Encourage interaction and engagement from your site visitors.
-  - Create a form to allow users to sign up for a travel newsletter, enhancing user engagement.
-
-- [- ] **Custom Styling**: Add a personal touch to your site's design.
-  - [ ] Integrate at least one custom font using Google Fonts to add personality to your site.
-  - [ ] Experiment with at least one CSS property not covered in the lessons or labs to customize your page further.
+- [X] **Sorting Options**
+  - [ ] Implement a dropdown or button options that allow users to sort the playlist by name, number of likes, or date added.
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
+<iframe src="https://drive.google.com/file/d/1Ar7ST1oci2XOeBEtaF_D2wLB7cTX9sXg/preview" width="640" height="480" allow="autoplay"></iframe>
 
-`ADD_EMBEDDED_CODE_HERE`
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes I felt prepared for most. However, the adding and deleting features felt like they were a bit out of my range.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have loved to implement and adding and deleting function next to the search bar, or when you scroll to the end the option of adding a playlist would appear. I would also finish more sort options.
+
+Next, I would make my code more concise, I need more practice with functions to make my code less repetitive.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Yes, I had trouble with rendering the playlistsa and making sure they updated after certain features changed their conditional rendering. Peers thought I should display options for the playlists.
 
 ### Open-source libraries used
 
@@ -87,4 +74,4 @@ Add your response here
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Sammy: TA!
