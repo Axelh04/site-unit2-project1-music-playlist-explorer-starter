@@ -49,7 +49,7 @@ Estimated time spent:  50 hours spent in total
 
 ### Walkthrough Video
 
-<iframe src="https://drive.google.com/file/d/1Ar7ST1oci2XOeBEtaF_D2wLB7cTX9sXg/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1LzG49gWkoRfyv2qurwLvVpjD2EO8axHr/view?usp=drivesdk" width="640" height="480" allow="autoplay"></iframe>
 
 
 ### Reflection
